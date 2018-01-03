@@ -63,11 +63,3 @@ http://dcos-host/#services >> Services >> conductr >> More >> Suspend >> Suspend
 ```
 http://dcos-host/#services >> Services >> conductr >> More >> Destroy >> Destroy Service
 ```
-
-* If uninstalling, remove framework resource reservations by running the framework cleaner:
-
-```bash
-docker run mesosphere/janitor /janitor.py -z dcos-service-conductr
-```
-
-See the [DC/OS doc](https://docs.mesosphere.com/1.9/deploying-services/uninstall/#framework-cleaner) for more info on the framework cleaner.
